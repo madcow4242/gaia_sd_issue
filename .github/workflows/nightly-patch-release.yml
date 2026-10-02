@@ -330,7 +330,7 @@ jobs:
           fi
 
       - name: Draft release notes and open the release PR
-        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790  # v1.0.235
+        uses: anthropics/claude-code-action@fd1c128679612beff4ca259c78021c506e8aa7a7  # v1.0.237
         with:
           # Prefer subscription OAuth, fall back to API key — same wiring as claude.yml.
           anthropic_api_key: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN == '' && secrets.ANTHROPIC_API_KEY || '' }}
